@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+  <!-- HTML element říká prohlížeči, že všechno uvnitř něho bude html kód-->
+  <!-- lang atribute udává jazyk, dir atribute - ltr = left to right (arabština je třeba rtr =  right to left) -->
+
+  <head>
+    <!-- HEAD element obsahuje informace o stránce-->
+    <meta charset="utf-8" />
+    <!-- META element dává extra meta data html dokumentu, atribut CHARSET říká, že stránka
+     je zakódována pomocí utf-8 encoding system, který je standardem a měl by obsahovat většinu mezinárodních znaků + emojies  -->
+    <title>Ⓟ Tomáš Pešek's Personal Site</title>
+    <!-- TITLE dělá titulek stránky (název okna)-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- BODY element obsahuje většinu informací stránky -->
+    <table cellspacing="20"> <!-- table element tvoří tabulku -->
+      <tr> <!-- tr (table row) tvoří jednotlivý řádek tabulky -->
+        <td> <!-- td (table data) tvoří jednotlivé buňky tabulky -->
+          <img
+            src="images/profilove_foto.png"
+            width="200"
+            height="200"
+            alt="tomas profile picture"
+          /><!-- img element na obrázky, src je zdroj obrázku, alt je text, který se zobrazí, když se obrázek nenačte + podle
+          toho může vyhledávat Google -->
+        </td>
+        <td>
+          <h1>Tomáš Pešek</h1>
+          <p>
+            <!-- reprezentuje textový paragraf -->
+            <em
+              >Student, Junior <strong>Web developer</strong> and positive mind
+              person</em
+            >
+            <!-- <em> element dělá kurzívu a zároveň říká, že jde o něco významného, měl by se používat pokaždé a nepoužívat <i>,
+               protože ten pouze styluje -->
+          </p>
+          <p>
+            Jsem studentem 2. ročníku softwarového vývoje na
+            <strong>Unicorn University</strong>. Zajímám se o webový vývoj a
+            věci okolo něj.
+            <!-- <strong> dělá text tučnější -->
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr/> <!-- rozdělí v této části stránku lajnou -->
+
+    <h3>Vzdělání</h3>
+    <ul>
+      <!-- UNORDER LIST - nečíslovaný seznam -->
+      <li> <!-- LI tvoří jednotlivou položku seznamu -->
+        <a href="https://www.zsrudna.cz/">Základní škola Rudná</a> (2001-2009)  <!-- ANCHOR tag umožňuje udělat odkaz, link se vkládá
+        do atributu href a text, na který se bude klikat se píše mezi A tagy -->
+      </li>
+      <li><a href="http://www.gybot.cz/">Gymnázium Botičská</a></li>
+      <li><a href="https://www.faf.cuni.cz/">Farmaceutická fakulta UK</a></li>
+      <li>
+        <a href="https://unicornuniversity.net/cs/">Unicorn University</a> od
+        2019
+      </li>
+    </ul>
+
+    <hr />
+
+    <h3>Pracovní zkušenosti</h3>
+
+    <table cellspacing="20">
+      <thead> 
+        <!-- hlavička tabulky -->
+        <tr>
+          <th>Časové období</th>
+          <!-- tento th element udělá místo klasického textu tučný a zarovná ho na střed -->
+          <!-- lze ho použít i mimo thead přímo v table, poté nemusíme tabulku rozdělovat ani do thead apod.-->
+          <th>Druh práce</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- tělo tabulky -->
+        <tr>
+          <td>2009-2018</td> 
+          <td>Zahradnické práce</td>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td>Rozvoz jídel</td>
+        </tr>
+        <tr>
+          <td>2018-2021</td>
+          <td>Instalatérské práce</td>
+        </tr>
+      </tbody>
+
+      <tfoot></tfoot>
+      <!-- spodek tabulky -->
+    </table>
+
+    <hr />
+
+    <h3>Skills</h3>
+
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <table cellspacing="10">
+            <tr>
+              <td>HTML</td>
+              <td>★★☆☆☆</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>★☆☆☆☆</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>★☆☆☆☆</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table cellspacing="10">
+            <tr>
+              <td>SQL</td>
+              <td>★★☆☆☆</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>★☆☆☆☆</td>
+            </tr>
+            <tr>
+              <td>Node.js</td>
+              <td>★☆☆☆☆</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <a href="hobbies.html">Moje koníčky</a> 
+    <br />
+    <a href="contacts.html">Kontaktujte mě</a>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakty</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Kontakty</h1>
+    <p>Mobil: +420 774 224</p>
+    <p>E-mail: pesek.tomas@icloud.com</p>
+    <p>Adresa: U Lesa 952, Rudná 252 19</p>
+    
+    <hr>
+
+    <form action="mailto: pesek.tomas@icloud.com" method="post" enctype="text/plain"> 
+      <!-- formulář -->
+      <!-- action - co se stane po zmáčknutí submit buttonu, zde otevře mailclient -->
+      <!-- encytype - text/plain dělá, aby se v mail clientovi nezobrazovali divné znaky-->
+      <label>Your Name:</label> <!-- label zobrazuje text před vyplňovacím políčkem -->
+      <input type="text" name="yourName" value=""><br> <!--  input type - co budeme vyplňovat (text, password, button, submit, date, range...)  -->
+      <!-- atribut NAME pomáhá identifikovat, co se ve formuláři přesně vyplňuje -->
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <label>Your Message:</label><br>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>  <!-- zobrazí textové pole, rows a cols určují jeho velikost -->
+      <input type="submit" name="" /> <!-- type="submit" - udělá potvrzovací tlačítko -->
+    </form>
+
+  </body>
+</html>
+
+
